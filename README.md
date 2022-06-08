@@ -3,12 +3,12 @@ Python script that transfers all Spotify playlists to Youtube-Music using [spoti
 
 ---
 ## Setup
-### Setup Spotify
+### Spotify
 1. Generate a new app at [https://developer.spotify.com/dashboard/applications)](https://developer.spotify.com/dashboard/applications)
 2. Fill the `redirect_uri` from [config.py](./config.py) into the new app's settings
 3. Fill in your `client_id` and `client_secret` from your Spotify app into [config.py](./config.py) file 
 
-### Setup YouTubeMusic
+### YouTubeMusic
 1. Open a new tab
 2. Open the developer tools (Ctrl-Shift-I) and select the “Network” tab
 3. Go to [https://music.youtube.com](https://music.youtube.com) and ensure you are logged in
