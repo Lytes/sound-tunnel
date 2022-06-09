@@ -1,8 +1,11 @@
 # sound-tunnel
-Python script that transfers all Spotify playlists to Youtube-Music using [spotipy](https://github.com/plamere/spotipy) and [ytmusicapi](https://github.com/sigma67/ytmusicapi)
+Python3 script that transfers all Spotify playlists to Youtube-Music using [spotipy](https://github.com/plamere/spotipy) and [ytmusicapi](https://github.com/sigma67/ytmusicapi)
 
 ---
 ## Setup
+### Requirements
+1. Install `spotipy` and `ytmusicapi` using `pip install -r requirements.txt`
+
 ### Spotify
 1. Generate a new app at [https://developer.spotify.com/dashboard/applications)](https://developer.spotify.com/dashboard/applications)
 2. Fill the `redirect_uri` from [config.py](./config.py) into the new app's settings
