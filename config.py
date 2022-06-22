@@ -14,7 +14,7 @@ CLIENT_SECRET = ""
 REDIRECT_URI = "http://localhost:9000/callback/"
 
 # The permissions needed to access all your spotify playlists
-SCOPE = "playlist-read-collaborative playlist-read-private"
+SCOPE = "playlist-read-collaborative playlist-read-private user-library-read"
 
 # File containing your youtubemusic cookies
 ytfile = "headers_auth.json"
