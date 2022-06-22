@@ -1,2 +1,6 @@
 spotipy
 ytmusicapi
+math
+argparse
+time
+sys
