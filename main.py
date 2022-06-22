@@ -70,7 +70,7 @@ def get_youtube_playlists(youtube):
    return yt_lists
 
 def display_playlists(lists):
-   for name in spfy_lists:
+   for name in lists:
       print(name)
 
 def get_ytid_from_spfy(source_playlist_name):
