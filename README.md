@@ -1,5 +1,5 @@
 # sound-tunnel
-Python3 script that transfers all Spotify playlists to Youtube-Music using [spotipy](https://github.com/plamere/spotipy) and [ytmusicapi](https://github.com/sigma67/ytmusicapi)
+Python3 script to transfers playlists back and forth between Spotify and Youtube-Music using [spotipy](https://github.com/plamere/spotipy) and [ytmusicapi](https://github.com/sigma67/ytmusicapi)
 
 ---
 ## Setup
