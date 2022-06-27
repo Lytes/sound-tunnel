@@ -4,3 +4,5 @@ math
 argparse
 time
 sys
+difflib
+json
