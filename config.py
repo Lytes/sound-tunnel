@@ -18,3 +18,6 @@ SCOPE = "playlist-read-collaborative playlist-read-private user-library-read pla
 
 # File containing your youtubemusic cookies
 ytfile = "headers_auth.json"
+
+# File containing your tidal cookies
+tidalfile = "creds_auth.txt"
