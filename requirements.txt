@@ -6,3 +6,6 @@ time
 sys
 difflib
 json
+tidalapi
+requests
+datetime
