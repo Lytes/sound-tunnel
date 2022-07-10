@@ -15,8 +15,9 @@ Python3 script to transfer playlists across Spotify, Tidal and Youtube-Music usi
 1. Open a new tab
 2. Open the developer tools (Ctrl-Shift-I) and select the “Network” tab
 3. Go to [https://music.youtube.com](https://music.youtube.com) and ensure you are logged in
-4. Find an authenticated POST request. 
-5. Paste copied cookies in [headers_auth.json](headers_auth.json). Should look something like this
+4. Find an authenticated POST request.
+5. Copy your cookies
+6. Paste copied cookies in [headers_auth.json](headers_auth.json). Should look something like this
 ![example image](./image.png "Example img")
 
 ### Tidal Music
