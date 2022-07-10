@@ -24,7 +24,8 @@ Python3 script to transfer playlists across Spotify, Tidal and Youtube-Music usi
 1. Easiest one. Run `main.py`. It provides a link link. 
 2. Follow link to authorize the script.
 
-### Commands
+---
+## Commands
 1. Display all flags with `python3 main.py --help`
 2. Specify playlist source platform and destination platform with `--source`/`-s` and `--destination`/`-d` respectively
 3. Display user playlists for source platfrom using `-L` e.g Display tidal playlists with
