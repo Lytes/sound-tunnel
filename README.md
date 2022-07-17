@@ -75,6 +75,6 @@ python3 main.py --source spotify --destination youtube -A
 - [x] Clean code and make it easy to add platforms
 - [x] Handle Spotify's liked songs (It's not considered a playlist by the api)
 - [x] Integrate TidalMusic
+- [x] Add Applemusic to the mix
 - [ ] Handle TidalMusic's liked songs (It's not considered a playlist by the api)
-- [ ] ~Add Applemusic to the mix~ On hold since [apple-music-python](https://github.com/mpalazzolo/apple-music-python] has no write features, will attempt to bypass with cookies
 - [ ] Add Deezer?
