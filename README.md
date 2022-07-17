@@ -1,6 +1,12 @@
 # sound-tunnel
 Python3 script to transfer playlists across Spotify, Tidal and Youtube-Music using [spotipy](https://github.com/plamere/spotipy), [tidalapi](https://github.com/tamland/python-tidal) and [ytmusicapi](https://github.com/sigma67/ytmusicapi) respectively
 
+## Supported Platfrom
+1. Youtube Music -> specify with `youtube`
+2. Spotify -> specify with `spotify`
+3. Tidal -> specify with `tidal`
+4. Apple Music -> specify with `apple`
+
 ---
 ## Setup
 ### Requirements
@@ -8,26 +14,40 @@ Python3 script to transfer playlists across Spotify, Tidal and Youtube-Music usi
 
 ### Spotify
 1. Generate a new app at [https://developer.spotify.com/dashboard/applications)](https://developer.spotify.com/dashboard/applications)
-2. Fill the `redirect_uri` from [config.py](./config.py) into the new app's settings
-3. Fill in your `client_id` and `client_secret` from your Spotify app into [config.py](./config.py) file 
+2. Fill the `redirect_uri` from [config.py](config/config.py) into the new app's settings
+3. Fill in your `client_id` and `client_secret` from your Spotify app into [config.py](config/config.py) file 
 
 ### YouTubeMusic
-1. Open a new tab
+1. Open a new tab in browser
 2. Open the developer tools (Ctrl-Shift-I) and select the “Network” tab
 3. Go to [https://music.youtube.com](https://music.youtube.com) and ensure you are logged in
 4. Find an authenticated POST request.
 5. Copy your cookies
-6. Paste copied cookies in [headers_auth.json](headers_auth.json). Should look something like this
+6. Paste copied cookies in [headers_auth.json](.creds/headers_auth.json). Should look something like this
 ![example image](./image.png "Example img")
 
 ### Tidal Music
 1. Easiest one. Run `main.py`. It provides a link link. 
 2. Follow link to authorize the script.
 
+### Apple Music
+1. Open a new tab in browser
+2. Open the developer tools (Ctrl-Shift-I) and select the “Network” tab
+3. Go to [https://music.apple.com](https://music.apple.com) and ensure you are logged in
+4. Find any authenticated POST request.
+5. Copy out the value of the `authorization header` and `media-user-token` request headers
+6. Paste copied values in [.creds/i_auth.txt](i_auth.txt). Should look something like this
+![example image](./image_2.png "Example img")
+
 ---
 ## Commands
 1. Display all flags with `python3 main.py --help`
 2. Specify playlist source platform and destination platform with `--source`/`-s` and `--destination`/`-d` respectively
+   ### Supported Platfrom
+   . Youtube Music -> specify with `youtube`
+   . Spotify -> specify with `spotify`
+   . Tidal -> specify with `tidal`
+   . Apple Music -> specify with `apple`
 3. Display user playlists for source platfrom using `-L` e.g Display tidal playlists with
 ```
 python3 main.py --source tidal -L
