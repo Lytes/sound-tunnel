@@ -1,6 +1,6 @@
 ![Sound-tunnel gif](sound--tunnel.gif)
 # Sound-tunnel
-Python3 script to transfer playlists across Spotify, Tidal and Youtube-Music using [spotipy](https://github.com/plamere/spotipy), [tidalapi](https://github.com/tamland/python-tidal) and [ytmusicapi](https://github.com/sigma67/ytmusicapi) respectively
+Python3 script to transfer playlists across Spotify, Tidal, AppleMusic and Youtube-Music
 
 ## Supported Platfrom
 1. Youtube Music -> specify with `youtube`
@@ -44,8 +44,7 @@ Python3 script to transfer playlists across Spotify, Tidal and Youtube-Music usi
 ## Commands
 1. Display all flags with `python3 main.py --help`
 2. Specify playlist source platform and destination platform with `--source`/`-s` and `--destination`/`-d` respectively
-   ### Supported Platfrom
-   . Youtube Music -> specify with `youtube`
+   Specify Youtube Music -> specify with `youtube`
    . Spotify -> specify with `spotify`
    . Tidal -> specify with `tidal`
    . Apple Music -> specify with `apple`
