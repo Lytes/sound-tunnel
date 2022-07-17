@@ -1,11 +1,5 @@
 spotipy
 ytmusicapi
-math
 argparse
-time
-sys
-difflib
-json
-tidalapi
 requests
-datetime
+tidalapi
