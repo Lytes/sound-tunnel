@@ -62,7 +62,7 @@ def yt_dest_check(ytmusic, yt_lists, dest_playlist_name):
 
 def move_to_ytmusic(ytmusic, playlist_info, dest_id):
    not_found = []
-   present_song = get_yt_playlist_content(dest_id)
+   present_song = get_yt_playlist_content(ytmusic, dest_id)
    playlist_info = what_to_move(present_song, playlist_info)
    not_found = []
    try:
