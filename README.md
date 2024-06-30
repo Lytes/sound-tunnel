@@ -19,17 +19,14 @@ Python3 script to transfer playlists across Spotify, Tidal, AppleMusic and Youtu
 3. Fill in your `client_id` and `client_secret` from your Spotify app into [config.py](config/config.py) file 
 
 ### YouTubeMusic
-1. Open a new tab in browser
-2. Open the developer tools (Ctrl-Shift-I) and select the “Network” tab
-3. Go to [https://music.youtube.com](https://music.youtube.com) and ensure you are logged in
-4. Find an authenticated POST request.
-5. Copy your cookies
-6. Paste copied cookies in [headers_auth.json](.creds/headers_auth.json). Should look something like this
-![example image](./image.png "Example img")
+1. Create the oauth.json file in the `.creds` folder
+```
+cd .creds && ytmusicapi oauth
+```
+> Ensure ytmusicapi location is added to PATH
 
 ### Tidal Music
-1. Easiest one. Run `main.py`. It provides a link link. 
-2. Follow link to authorize the script.
+1. Attempting to use Tidal will auto-set it up
 
 ### Apple Music
 1. Open a new tab in browser

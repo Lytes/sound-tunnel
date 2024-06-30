@@ -17,7 +17,7 @@ REDIRECT_URI = "http://localhost:9000/callback/"
 SCOPE = "playlist-read-collaborative playlist-read-private user-library-read playlist-modify-private"
 
 # File containing your youtubemusic cookies
-ytfile = ".creds/headers_auth.json"
+ytfile = ".creds/oauth.json"
 
 # File containing your tidal cookies
 tidalfile = ".creds/creds_auth.txt"
