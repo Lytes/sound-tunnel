@@ -34,8 +34,8 @@ cd .creds && ytmusicapi oauth
 3. Go to [https://music.apple.com](https://music.apple.com) and ensure you are logged in
 4. Find any authenticated POST request.
 5. Copy out the value of the `authorization header` and `media-user-token` request headers
-6. Paste copied values in [.creds/i_auth.txt](i_auth.txt). Should look something like this
-![example image](./image_2.png "Example img")
+6. Create and paste copied values in `.creds/i_auth.txt` (Example structure in [.creds/i_auth.example.txt](.creds/i_auth.example.txt)).
+   It should look something like this ![example image](./image_2.png "Example img")
 
 ---
 ## Commands
