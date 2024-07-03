@@ -14,7 +14,8 @@ def tidal_auth():
       try:
          with open(tidalfile, 'r') as file:
             cred = [line.rstrip() for line in file]
-         if datetime.strptime(cred[3], "%m/%d/%Y, %H:%M:%S") > datetime.now() and tidal.load_oauth_session(cred[0], cred[1], cred[2]):
+         expiry_time: datetime = datetime.strptime(cred[3], "%m/%d/%Y, %H:%M:%S.%f")
+         if expiry_time > datetime.now() and tidal.load_oauth_session(cred[0], cred[1], cred[2], expiry_time):
             message("t+","Successfully Authenticated")
             return tidal
       except:
@@ -22,7 +23,7 @@ def tidal_auth():
       tidal.login_oauth_simple()
       if tidal.check_login():
          message("t+","Successfully Authenticated")
-         creds = [tidal.session_id, tidal.token_type, tidal.access_token, tidal.expiry_time.strftime("%m/%d/%Y, %H:%M:%S")]
+         creds = [tidal.token_type, tidal.access_token, tidal.refresh_token, tidal.expiry_time.strftime("%m/%d/%Y, %H:%M:%S.%f")]
          with open(tidalfile, 'w') as file:
             file.write('\n'.join(creds))
          return tidal
