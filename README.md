@@ -20,7 +20,7 @@ Python3 script to transfer playlists across Spotify, Tidal, AppleMusic and Youtu
 
 ### YouTubeMusic
 1. Create the oauth.json file in the `.creds` folder
-```
+```sh
 cd .creds && ytmusicapi oauth
 ```
 > Ensure ytmusicapi location is added to PATH
@@ -41,24 +41,24 @@ cd .creds && ytmusicapi oauth
 ## Commands
 1. Display all flags with `python3 main.py --help`
 2. Specify playlist source platform and destination platform with `--source`/`-s` and `--destination`/`-d` respectively
-   Specify Youtube Music -> specify with `youtube`
-   . Spotify -> specify with `spotify`
-   . Tidal -> specify with `tidal`
-   . Apple Music -> specify with `apple`
+   - Specify Youtube Music -> specify with `youtube`
+   - Spotify -> specify with `spotify`
+   - Tidal -> specify with `tidal`
+   - Apple Music -> specify with `apple`
 3. Display user playlists for source platfrom using `-L` e.g Display tidal playlists with
-```
+```sh
 python3 main.py --source tidal -L
 ```
 4. Copy a playlist (specify name in stdin) from one platform to the other using `-p` e.g Copy my "1am drive" playlists from spotify to ytmusic
-```
+```sh
 python3 main.py -s spotify -d youtube -p "1am drive"
 ```
 5. Playlist names can be specified from a file with each playlist name occupying a line
-```
+```sh
 python3 main.py --source spotify --destination youtube -P ./myplaylists.txt
 ```
 6. Transfer all playlists from one platform to the other using `-p` e.g Transfer all playlists from spotify to ytmusic (this includes Spotify liked songs)
-```
+```sh
 python3 main.py --source spotify --destination youtube -A
 ```
 ---
