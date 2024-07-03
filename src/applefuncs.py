@@ -47,10 +47,10 @@ def get_apple_playlists(apple):
 def apple_dest_check(apple_lists, apple, dest_playlist_name):
    if dest_playlist_name in apple_lists:
       dest_playlist_id = apple_lists[dest_playlist_name]
-      message("a+", "Playlist exists, adding missing songs")
+      message("a+","Playlist exists, adding missing songs: \"{}\"".format(dest_playlist_name))
    else:
       dest_playlist_id = appleapi_create_playlist(dest_playlist_name, apple)
-      message("a+", "Playlist created")
+      message("a+","Playlist created: \"{}\"".format(dest_playlist_name))
    return dest_playlist_id
 
 def appleapi_create_playlist(playlist_name, headers):

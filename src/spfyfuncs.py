@@ -70,11 +70,11 @@ def get_spfy_playlist_content(spotify, source_id):
 def spfy_dest_check(spfy_lists, spotify, spfy_id, dest_playlist_name):
    if dest_playlist_name in spfy_lists:
       dest_playlist_id = spfy_lists[dest_playlist_name]
-      message("s+","Playlist exists, adding missing songs")
+      message("s+","Playlist exists, adding missing songs: \"{}\"".format(dest_playlist_name))
    else:
       create_playlist = spotify.user_playlist_create(spfy_id, dest_playlist_name, public=False, collaborative=False, description='Sound Tunnel Playlist')
       dest_playlist_id = create_playlist['id']
-      message("s+","Playlist created")
+      message("s+","Playlist created: \"{}\"".format(dest_playlist_name))
    return dest_playlist_id
 
 def move_to_spfy(spotify, playlist_info, dest_id):
