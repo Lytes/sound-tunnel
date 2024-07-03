@@ -28,7 +28,8 @@ def tidal_auth():
             file.write('\n'.join(creds))
          return tidal
       else:
-         var_error_out
+         message("t-","Authentication Failed")
+         raise TimeoutError()
    except:
       message("t-","Authentication failed")
       sys.exit(0)
@@ -45,7 +46,8 @@ def get_tidal_playlists(tidal):
    return tidl_lists
 
 def get_tidal_playlist_content(tidal,source_id):
-   playlist_content = tidal.get_playlist_items(source_id)
+   playlist = tidal.playlist(source_id)
+   playlist_content = playlist.tracks() 
    result = []
    for song in playlist_content:
       song_name = song.name
