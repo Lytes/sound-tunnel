@@ -54,10 +54,10 @@ def get_yt_playlist_content(ytmusic, source_id):
 def yt_dest_check(ytmusic, yt_lists, dest_playlist_name):
    if dest_playlist_name in yt_lists:
       dest_playlist_id = yt_lists[dest_playlist_name]
-      message("y+","Playlist exists, adding missing songs")
+      message("y+","Playlist exists, adding missing songs: \"{}\"".format(dest_playlist_name))
    else:
       dest_playlist_id = ytmusic.create_playlist(dest_playlist_name,"Sound Tunnel playlist")
-      message("y+", "Playlist created")
+      message("y+","Playlist created: \"{}\"".format(dest_playlist_name))
    return dest_playlist_id
 
 def move_to_ytmusic(ytmusic, playlist_info, dest_id):

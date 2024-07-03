@@ -63,10 +63,10 @@ def get_tidal_playlist_content(tidal,source_id):
 def tidal_dest_check(tidl_lists, tidal, dest_playlist_name):
    if dest_playlist_name in tidl_lists:
       dest_playlist_id = tidl_lists[dest_playlist_name]
-      message("t+","Playlist exists, adding missing songs")
+      message("t+","Playlist exists, adding missing songs: \"{}\"".format(dest_playlist_name))
    else:
       dest_playlist_id = tidal_create_playlist(dest_playlist_name,"Sound Tunnel playlist", tidal.access_token)
-      message("t+","Playlist created")
+      message("t+","Playlist created: \"{}\"".format(dest_playlist_name))
    return dest_playlist_id
 
 def move_to_tidal(tidal, playlist_info, dest_id):
