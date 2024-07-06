@@ -1,0 +1,4 @@
+{
+   "authorization":"Bearer foobar123",
+   "media-user-token":"barbaz123"
+}
